@@ -1,0 +1,3 @@
+test:
+  path: /Users/Vickash/Desktop/test
+  command: "osascript -e 'beep'"

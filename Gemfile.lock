@@ -1,0 +1,12 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    daemons (1.1.8)
+    rb-fsevent (0.9.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  daemons (= 1.1.8)
+  rb-fsevent (= 0.9.1)
