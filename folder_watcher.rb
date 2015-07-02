@@ -3,6 +3,11 @@ require 'bundler/setup'
 require 'yaml'
 Bundler.require
 
+# Make sure there's only one process running
+if File.file?('daemons.rb.pid')
+  system 'kill -15 $(cat daemons.rb.pid) &>/dev/null 2>&1'
+end
+
 # Load the settings from YAML into a hash.
 SETTINGS = YAML.load_file('settings.yml')
 
